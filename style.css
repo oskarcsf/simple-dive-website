@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #012a45;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #fff;
+}
+.navbar-nav .nav-link {
+  color: #e8f5fc;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #87c7e3;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  /* Restore hero background to external image. */
+  background-image: url('images/hero.png');
+  background-size: cover;
+  background-position: center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 42, 69, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Sub hero for secondary pages */
+.sub-hero {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.sub-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 42, 69, 0.55);
+}
+.sub-hero h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.25rem;
+  color: #f3f9fc;
+}
+.btn-primary {
+  background-color: #0074a5;
+  border-color: #0074a5;
+}
+.btn-primary:hover {
+  background-color: #005e85;
+  border-color: #005e85;
+}
+
+/* Section styling */
+.section h2 {
+  color: #012a45;
+  font-weight: 700;
+}
+.section p {
+  margin-bottom: 0;
+}
+.bg-light {
+  background-color: #f5f8fa !important;
+}
+
+/* Cards */
+.card-title {
+  font-weight: 600;
+}
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #012a45;
+  color: #e8f5fc;
+  padding: 1rem 0;
+}
